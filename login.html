@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loginpage</title>
+    <link rel="stylesheet" href="style2.css">
+   
+</head>
+<body>
+    <form>
+        <h1>Login</h1>
+        <label>Username</label>
+        <input type="text" id="username" value="">
+        <label>Password</label>
+        <input type="password" id="password" value="">
+        <button onclick="myfunction()">Login</button>
+        <a>Forget password?</a>
+        <a href="C:\Users\Lenovo\Desktop\login\regi.html">New user</a>
+        
+    </form>
+    <script>
+        function myfunction(){
+var inputusername=document.getElementById("username");
+localStorage.setItem("username",inputusername.value);
+var inputpassword=document.getElementById("password");
+localStorage.setItem("password",inputpassword.value);
+        }
+    </script>
+   
+    
+</body>
+</html>
